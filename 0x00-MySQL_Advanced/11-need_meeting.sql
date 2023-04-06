@@ -1,5 +1,4 @@
---this SQL script creates a view of meeting for all student
---@author Ogu Johnkennedy
+-- This SQL script creates a view of meeting for all student
 DROP VIEW IF EXISTS need_meeting;
 CREATE VIEW need_meeting 
 AS SELECT name FROM students 

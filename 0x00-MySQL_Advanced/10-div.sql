@@ -7,10 +7,10 @@ RETURNS FLOAT DETERMINISTIC
 BEGIN
     DECLARE result FLOAT;
     IF b = 0 THEN
-        SET res = 0;
+        SET result = 0;
     ELSE
-        SET res = a / b;
+        SET result = a / b;
     END IF;
-    RETURN res;
+    RETURN result;
 END;
 |

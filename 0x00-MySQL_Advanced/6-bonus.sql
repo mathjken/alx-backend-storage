@@ -1,6 +1,6 @@
---this SQL script that creates a stored procedure AddBonus
+-- This SQL script that creates a stored procedure AddBonus
 -- that adds a new correction for a student.
---@author Ogu Johnkennedy
+-- @author Ogu Johnkennedy
 -- a script an addbonus procedure
 DROP PROCEDURE IF EXISTS AddBonus;
 DELIMITER $$ ;
