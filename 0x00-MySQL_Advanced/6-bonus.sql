@@ -12,9 +12,8 @@ BEGIN
     INSERT INTO projects (name)
     SELECT project_name FROM DUAL
 
-    IF NOT EXISTS (SELECT * FROM projects WHERE name = project_name);
+    WHERE NOT EXISTS (SELECT * FROM projects WHERE name = project_name);
     	INSERT INTO corrections (user_id, project_id, score)
-    END IF;
 	VALUES (user_id, (SELECT id FROM projects WHERE name = project_name), score);
 END;
 |
