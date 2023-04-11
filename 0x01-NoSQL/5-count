@@ -1,0 +1,3 @@
+//script  find the number records in the collection
+
+db.school.count()
