@@ -1,0 +1,3 @@
+// list all the records with name starting with  Holberton from school schema
+
+db.school.find({name: /^Holberton/})
