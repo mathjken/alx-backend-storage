@@ -67,7 +67,8 @@ class Cache:
         """convert data to init"""
         return int.from_bytes(data, "big")
 
-    def replay(method: Callable):
+
+def replay(method: Callable):
     """ display the history of calls for a function """
     key = method.__qualname__
     inputs = key + ":inputs"
