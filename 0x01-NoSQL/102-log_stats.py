@@ -43,4 +43,3 @@ def nginx_stats_check():
 
 if __name__ == "__main__":
     nginx_stats_check()
-
